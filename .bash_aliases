@@ -12,4 +12,4 @@ function cdp() {
 		cd ${selected_dir}
 	fi
 }
-alias dif="docker images --format "{{.ID}}> {{.Repository}}:{{.Tag}}"
+alias dif='docker images --format "{{.ID}}> {{.Repository}}:{{.Tag}}'
