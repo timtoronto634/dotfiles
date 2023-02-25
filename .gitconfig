@@ -6,4 +6,7 @@
 	co = checkout
 	b = branch
 [url "git@github.com:"]
-	pushInsteadOf = https://github.com/
+	insteadOf = https://github.com/
+[ghq]
+	vcs = github
+	user = timtoronto634
