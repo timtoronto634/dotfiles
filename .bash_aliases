@@ -12,6 +12,8 @@ function cdp() {
 		cd ${selected_dir}
 	fi
 }
+
 alias dif='docker images --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}"'
 alias reload="source ~/.bashrc"
+
 

@@ -5,6 +5,7 @@
 	st = status
 	co = checkout
 	b = branch
+	cm = switch main
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [ghq]
