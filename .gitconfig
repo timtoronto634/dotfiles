@@ -6,6 +6,7 @@
 	co = checkout
 	b = branch
 	cm = !git checkout $(git symbolic-ref refs/remotes/origin/HEAD | cut -f4 -d/ )
+	dmb = !"git branch --merged | egrep -v '^*|master|main' | xargs git branch -d"
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [ghq]
