@@ -16,4 +16,13 @@ function cdp() {
 alias dif='docker images --format "table {{.ID}}\t{{.Repository}}\t{{.Tag}}"'
 alias reload="source ~/.bashrc"
 
+docker_rmi_peco() {
+  local selected
+  selected=$(docker images | peco | awk '{print $3}')
+  if [ -n "$selected" ]; then
+    docker rmi "$selected"
+  else
+    echo "No image selected"
+  fi
+}
 
